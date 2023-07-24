@@ -17,12 +17,34 @@ nav, .hero-header, .intro, .about-me, .contact-me, .my-project{
   max-width: 1296px;
   margin: 0 auto;
 }
-ul{
+
+/* Flex 樣式整理 */
+nav ul, .intro, .hero-header, .about-me, .intro-img, .contact-me, .my-project-content{
   display: flex;
   justify-content: space-between;
+}
+nav ul, .intro{
   align-content: center;
 }
+.hero-header, .about-me, .contact-me{
+  align-items: center;
+}
 
+.about-me ul, .contact-me-text, .contact-me-link, .my-project, .rectangle-right, .rectangle-right-up, .rectangle-right-down{
+  display: flex;
+}
+
+.my-project{
+  flex-direction: column;
+  align-items: flex-end;
+}
+.rectangle-right{
+  flex-direction: column;
+}
+
+
+
+/* Nav 樣式 */
 .nav-item{
   color: #D1D1D1;
   text-decoration: none;
@@ -41,15 +63,11 @@ ul{
   font-size: 16px;
 }
 
+/* Hero header 樣式 */
 .header-container{
   background: #000;
 }
 
-.hero-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .pt-72{
   padding-top:72px;
 }
@@ -94,34 +112,19 @@ h1{
   color: black;
 }
 
+/* Intro 樣式 */
 .intro-container{
   background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true') no-repeat right center/cover;
 }
 h2{
   font-size: 64px;
 }
-.intro{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.pt-160{
-  padding-top: 160px;
-}
-.pb-160{
-  padding-bottom: 160px;
-}
-.intro h2{
+.intro h2, .intro p{
   color: white;
 }
-.intro p{
-  color: white;
-}
+
 .fz-24{
   font-size: 24px;
-}
-.intro-img{
-  display: flex;
 }
 .mb-36{
   margin-bottom: 36px;
@@ -138,11 +141,9 @@ h2{
 .mb-24{
   margin-bottom: 24px;
 }
-.intro-img{
-  display: flex;
-  justify-content: space-between;
-}
 
+
+/* About Me 樣式 */
 .about-me-container{
   background: white;
 }
@@ -152,16 +153,8 @@ h2{
 .pb-160{
   padding-bottom: 160px;
 }
-.about-me{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .mr-143{
   margin-right: 143px;
-}
-.about-me ul{
-  display: flex;
 }
 .about-me li{
   width: 306px;
@@ -169,12 +162,10 @@ h2{
 }
 .about-me-text p{
   width: 526px;
+  color: #15161D
 }
 .fz-20{
   font-size: 20px;
-}
-.about-me-text p{
-  color: #15161D
 }
 .pd-16{
   padding: 16px;
@@ -182,35 +173,29 @@ h2{
 .mb-36{
   margin-bottom: 36px;
 }
+
+/* Contact Me 樣式 */
+
 .contact-me-container{
   background: #050014;
 }
+.contact-me{
+  color: white;
+}
+
 .pt-96{
   padding-top: 96px;
 }
 .pb-96{
   padding-bottom: 96px;
 }
-.contact-me{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-}
-.contact-me-text{
-  display: flex;
-}
-.contact-me-link{
-  display: flex;
-}
+/* 讓 icon 填滿 div 的方法 Ref Izumi泉 助教ㄑ教學*/
 .img-stretch{
   max-height: 162px;  
   max-width: 162px;
   border-radius: 40px;
   object-fit: cover;
-  /*padding: 4px 12px 12px 4px;*/
 }
-
 .mr-12{
   margin-right: 12px;
 }
@@ -222,39 +207,13 @@ h2{
   border-radius: 40px;
   box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.contact-me-link a:active{}
+
+/* My Project 樣式 */
 .my-project-container{
   background: white;
 }
-
-footer{
-  background-color: black;
-  padding: 40px 0;
-}
-
-footer p{
-  text-align: center;
-  color: white;
-}
-
-.my-project {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 .my-project h2{
   width: 746px;
-}
-.my-project-content{
-  display: flex;
-  justify-content: space-between;
-}
-.rectangle-right{
-  display: flex;
-  flex-direction: column;
-}
-.rectangle-right-up{
-  display: flex;
 }
 
 .rectangle-right-up-right div{
@@ -278,11 +237,18 @@ footer p{
 .mb-76{
   margin-bottom: 76px;
 }
-.rectangle-right-down{
-  display: flex;
-}
-
 .mb-28{
   margin-bottom: 28px;
 }
 
+
+/* footer 樣式 */
+footer{
+  background-color: black;
+  padding: 40px 0;
+}
+
+footer p{
+  text-align: center;
+  color: white;
+}
