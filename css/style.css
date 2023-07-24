@@ -1,0 +1,288 @@
+
+/*@import url('https://fonts.googleapis.com/css?family=Bruno+Ace+SC');*/
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+body{
+  line-height: 1.5;
+  font-family: 'Bruno Ace SC', cursive;
+}
+img{
+  vertical-align: middle;
+}
+.nav-container{
+  background: black;
+}
+nav, .hero-header, .intro, .about-me, .contact-me, .my-project{
+  max-width: 1296px;
+  margin: 0 auto;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.nav-item{
+  color: #D1D1D1;
+  text-decoration: none;
+}
+.nav-item:hover{
+  color: #00FFA3;
+}
+.nav-item:active{
+  color: yellow;
+}
+
+.pd-40{
+  padding-top: 40px;
+}
+.fz-16{
+  font-size: 16px;
+}
+
+.header-container{
+  background: #000;
+}
+
+.hero-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pt-72{
+  padding-top:72px;
+}
+.mr-24{
+  margin-right: 24px;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  
+}
+.contact p{
+  font-size: 64px;
+  color: white;
+}
+h1{
+  font-size: 128px;
+  color: #00FFA3;
+  text-align: right;
+}
+.contact-botton{
+  background: white;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  padding: 12px 24px;
+  align-self: flex-end;
+}
+.contact-botton a{
+  text-decoration: none;
+}
+.contact-botton a:hover{
+  padding: 12px 16px;
+}
+.p-12{
+  padding: 12px;
+}
+.contact-botton span{
+  font-size: 16px;
+  color: black;
+}
+
+.intro-container{
+  background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true') no-repeat right center/cover;
+}
+h2{
+  font-size: 64px;
+}
+.intro{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pt-160{
+  padding-top: 160px;
+}
+.pb-160{
+  padding-bottom: 160px;
+}
+.intro h2{
+  color: white;
+}
+.intro p{
+  color: white;
+}
+.fz-24{
+  font-size: 24px;
+}
+.intro-img{
+  display: flex;
+}
+.mb-36{
+  margin-bottom: 36px;
+}
+.mb-32{
+  margin-bottom: 32px;
+}
+.mr-16{
+  margin-right: 16px;
+}
+.mr-24{
+  margin-right: 24px;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+.intro-img{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me-container{
+  background: white;
+}
+.pt-160{
+  padding-top: 160px;
+}
+.pb-160{
+  padding-bottom: 160px;
+}
+.about-me{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mr-143{
+  margin-right: 143px;
+}
+.about-me ul{
+  display: flex;
+}
+.about-me li{
+  width: 306px;
+  border: 1px solid #E3E3E3;
+}
+.about-me-text p{
+  width: 526px;
+}
+.fz-20{
+  font-size: 20px;
+}
+.about-me-text p{
+  color: #15161D
+}
+.pd-16{
+  padding: 16px;
+}
+.mb-36{
+  margin-bottom: 36px;
+}
+.contact-me-container{
+  background: #050014;
+}
+.pt-96{
+  padding-top: 96px;
+}
+.pb-96{
+  padding-bottom: 96px;
+}
+.contact-me{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.contact-me-text{
+  display: flex;
+}
+.contact-me-link{
+  display: flex;
+}
+.img-stretch{
+  max-height: 162px;  
+  max-width: 162px;
+  border-radius: 40px;
+  object-fit: cover;
+  /*padding: 4px 12px 12px 4px;*/
+}
+
+.mr-12{
+  margin-right: 12px;
+}
+.pr-16{
+  padding-right: 16px;
+}
+
+.img-stretch:hover{
+  border-radius: 40px;
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.contact-me-link a:active{}
+.my-project-container{
+  background: white;
+}
+
+footer{
+  background-color: black;
+  padding: 40px 0;
+}
+
+footer p{
+  text-align: center;
+  color: white;
+}
+
+.my-project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.my-project h2{
+  width: 746px;
+}
+.my-project-content{
+  display: flex;
+  justify-content: space-between;
+}
+.rectangle-right{
+  display: flex;
+  flex-direction: column;
+}
+.rectangle-right-up{
+  display: flex;
+}
+
+.rectangle-right-up-right div{
+  border-radius: 50px;
+}
+.seemore-botton{
+  background: black;
+  color: white;
+  padding: 12px 24px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+.seemore-botton a{
+  text-decoration: none;
+  color: white
+}
+.seemore-botton a:hover{
+  padding: 12px 16px;
+ }
+.mb-76{
+  margin-bottom: 76px;
+}
+.rectangle-right-down{
+  display: flex;
+}
+
+.mb-28{
+  margin-bottom: 28px;
+}
+
